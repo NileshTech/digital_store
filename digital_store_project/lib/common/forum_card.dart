@@ -10,10 +10,11 @@ class ForumCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
     return SizedBox(
-      width: 280.0,
+      width: screenSize.width * 0.6,
       child: Card(
-        margin: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 60.0),
+        margin: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 20.0),
         elevation: 20.0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(20.0)),

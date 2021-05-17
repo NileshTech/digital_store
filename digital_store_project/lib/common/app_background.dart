@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:digital_store_project/styleguide/colors.dart';
 
+const String appTitle = "Digital Store";
+
 class AppBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -13,6 +15,17 @@ class AppBackground extends StatelessWidget {
           children: <Widget>[
             Container(
               color: backgroundColor,
+            ),
+            Positioned(
+              top: 80,
+              left: 20,
+              child: Text(
+                appTitle,
+                style: Theme.of(context)
+                    .textTheme
+                    .headline4
+                    .copyWith(color: Colors.red),
+              ),
             ),
             Positioned(
               left: -(height / 2 - width / 2),
