@@ -8,7 +8,7 @@ final TextStyle valueTextStyle = TextStyle(
 final TextStyle labelTextStyle = TextStyle(
   fontWeight: FontWeight.normal,
   fontSize: 16.0,
-  color: Colors.grey,
+  color: Colors.red,
 );
 final TextStyle whiteValueTextStyle =
     TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0, color: Colors.white);

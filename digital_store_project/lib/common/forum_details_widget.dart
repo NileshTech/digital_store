@@ -13,7 +13,7 @@ class ForumDetailsWidget extends StatelessWidget {
     return ClipPath(
       clipper: MyCustomClipper(),
       child: Container(
-        height: 180.0,
+        height: 150.0,
         padding: const EdgeInsets.only(
             left: 20.0, right: 16.0, top: 24.0, bottom: 12.0),
         color: Colors.white,
@@ -29,45 +29,54 @@ class ForumDetailsWidget extends StatelessWidget {
                       border: Border.all(
                           color: Colors.grey.withOpacity(0.4), width: 2.0),
                     ),
-                    height: 40.0,
-                    width: 40.0,
+                    height: 30.0,
+                    width: 30.0,
                     child: Center(
-                        child: Text(
-                      forum.rank,
-                      style: rankStyle,
-                    )),
+                      //     child: Text(
+                      //   forum.rank,
+                      //   style: rankStyle,
+                      // )
+                      child: Icon(
+                        Icons.web,
+                        color: Colors.red,
+                      ),
+                    ),
                   ),
-                  Text("new", style: labelTextStyle),
+                  Text("visite", style: labelTextStyle),
                 ],
               ),
             ),
-            SizedBox(
-              height: 40.0,
+
+            Padding(
+              padding: const EdgeInsets.only(top: 25.0),
+              child: Text(
+                forum.subs,
+              ),
             ),
-            Row(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                LabelValueWidget(
-                  value: forum.topics.length.toString(),
-                  label: "topics",
-                  labelStyle: labelTextStyle,
-                  valueStyle: valueTextStyle,
-                ),
-                LabelValueWidget(
-                  value: forum.threads,
-                  label: "threads",
-                  labelStyle: labelTextStyle,
-                  valueStyle: valueTextStyle,
-                ),
-                LabelValueWidget(
-                  value: forum.subs,
-                  label: "subs",
-                  labelStyle: labelTextStyle,
-                  valueStyle: valueTextStyle,
-                ),
-              ],
-            )
+            // Row(
+            //   mainAxisSize: MainAxisSize.max,
+            //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            //   children: <Widget>[
+            //     LabelValueWidget(
+            //       value: forum.topics.length.toString(),
+            //       label: "topics",
+            //       labelStyle: labelTextStyle,
+            //       valueStyle: valueTextStyle,
+            //     ),
+            //     LabelValueWidget(
+            //       value: forum.threads,
+            //       label: "threads",
+            //       labelStyle: labelTextStyle,
+            //       valueStyle: valueTextStyle,
+            //     ),
+            //     LabelValueWidget(
+            //       value: forum.subs,
+            //       label: "subs",
+            //       labelStyle: labelTextStyle,
+            //       valueStyle: valueTextStyle,
+            //     ),
+            //   ],
+            // )
           ],
         ),
       ),

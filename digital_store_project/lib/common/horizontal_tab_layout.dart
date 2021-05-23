@@ -4,10 +4,11 @@ import 'package:digital_store_project/common/forum_card.dart';
 import 'package:digital_store_project/common/tab_text.dart';
 import 'package:digital_store_project/model/forum.dart';
 
-const String title1 = "Media";
-const String title2 = "Streamers";
-const String title3 = "Forum";
-const String title4 = "Forum";
+const String title1 = "Animation";
+const String title2 = "Website";
+const String title3 = "Videos";
+const String title4 = "Email";
+const String title5 = "Animation";
 
 class HorizontalTabLayout extends StatefulWidget {
   @override
@@ -20,6 +21,7 @@ class _HorizontalTabLayoutState extends State<HorizontalTabLayout>
   AnimationController _controller;
   Animation<Offset> _animation;
   Animation<double> _fadeAnimation;
+  String title;
 
   @override
   void initState() {
@@ -39,6 +41,13 @@ class _HorizontalTabLayoutState extends State<HorizontalTabLayout>
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
+    selectedTabIndex == 0
+        ? title = title1
+        : selectedTabIndex == 1
+            ? title = title2
+            : selectedTabIndex == 3
+                ? title = title4
+                : title = title5;
     return Container(
       height: screenSize.height * 0.7,
       child: Stack(
@@ -80,6 +89,13 @@ class _HorizontalTabLayoutState extends State<HorizontalTabLayout>
                     onTabTap: () {
                       onTabTap(3);
                     },
+                  ),
+                  TabText(
+                    text: title5,
+                    isSelected: selectedTabIndex == 4,
+                    onTabTap: () {
+                      onTabTap(4);
+                    },
                   )
                 ],
               ),
@@ -111,32 +127,54 @@ class _HorizontalTabLayoutState extends State<HorizontalTabLayout>
   List<Widget> getList(index) {
     return [
       [
-        ForumCard(forum: fortniteForum),
-        ForumCard(forum: pubgForum),
-        ForumCard(forum: fortniteForum),
-        ForumCard(forum: pubgForum),
+        ForumCard(forum: videoBuilder),
+        ForumCard(forum: doodleMaker),
+        ForumCard(forum: videoBuilderDelux),
+        ForumCard(forum: videoDashboard),
+        ForumCard(forum: videoAppSuite),
+        ForumCard(forum: chatterPal),
+        ForumCard(forum: avtarBuilder),
+        ForumCard(forum: doodleMakerDelux),
       ],
       [
-        ForumCard(forum: fortniteForum),
-        ForumCard(forum: fortniteForum),
-        ForumCard(forum: fortniteForum),
-        ForumCard(forum: pubgForum)
+        ForumCard(forum: videoBuilder),
+        ForumCard(forum: doodleMaker),
+        ForumCard(forum: videoBuilderDelux),
+        ForumCard(forum: videoDashboard),
+        ForumCard(forum: videoAppSuite),
+        ForumCard(forum: chatterPal),
+        ForumCard(forum: avtarBuilder),
+        ForumCard(forum: doodleMakerDelux),
       ],
       [
-        ForumCard(forum: fortniteForum),
-        ForumCard(forum: pubgForum),
-        ForumCard(forum: fortniteForum),
-        ForumCard(forum: pubgForum),
-        ForumCard(forum: pubgForum),
-        ForumCard(forum: pubgForum),
+        ForumCard(forum: videoBuilder),
+        ForumCard(forum: doodleMaker),
+        ForumCard(forum: videoBuilderDelux),
+        ForumCard(forum: videoDashboard),
+        ForumCard(forum: videoAppSuite),
+        ForumCard(forum: chatterPal),
+        ForumCard(forum: avtarBuilder),
+        ForumCard(forum: doodleMakerDelux),
       ],
       [
-        ForumCard(forum: fortniteForum),
-        ForumCard(forum: pubgForum),
-        ForumCard(forum: fortniteForum),
-        ForumCard(forum: pubgForum),
-        ForumCard(forum: pubgForum),
-        ForumCard(forum: pubgForum),
+        ForumCard(forum: videoBuilder),
+        ForumCard(forum: doodleMaker),
+        ForumCard(forum: videoBuilderDelux),
+        ForumCard(forum: videoDashboard),
+        ForumCard(forum: videoAppSuite),
+        ForumCard(forum: chatterPal),
+        ForumCard(forum: avtarBuilder),
+        ForumCard(forum: doodleMakerDelux),
+      ],
+      [
+        ForumCard(forum: videoBuilder),
+        ForumCard(forum: doodleMaker),
+        ForumCard(forum: videoBuilderDelux),
+        ForumCard(forum: videoDashboard),
+        ForumCard(forum: videoAppSuite),
+        ForumCard(forum: chatterPal),
+        ForumCard(forum: avtarBuilder),
+        ForumCard(forum: doodleMakerDelux),
       ]
     ][index];
   }
