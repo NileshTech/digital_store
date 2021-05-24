@@ -38,7 +38,7 @@ final doodleMaker = Forum(
     affiliateLink: "https://jvz6.com/c/1542335/357045");
 
 final videoBuilderDelux = Forum(
-    title: "VideoBuilder Deluxe",
+    title: "VideoBuilder\n Deluxe",
     imagePath: "assets/images/zpj1mhnhndvjae1sfnsq.png",
     rank: "31",
     threads: "88",
@@ -58,7 +58,7 @@ final videoDashboard = Forum(
     affiliateLink: "https://jvz1.com/c/1542335/346135");
 
 final videoAppSuite = Forum(
-    title: "Video App Suite",
+    title: "Video App \nSuite",
     imagePath: "assets/images/s03-img.jpg",
     rank: "31",
     threads: "88",

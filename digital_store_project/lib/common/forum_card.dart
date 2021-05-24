@@ -54,7 +54,7 @@ class _ForumCardState extends State<ForumCard> {
                 Positioned(
                   left: 0,
                   right: 0,
-                  bottom: 0,
+                  bottom: -20,
                   child: ForumDetailsWidget(forum: widget.forum),
                 ),
                 Positioned(

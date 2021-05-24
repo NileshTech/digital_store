@@ -13,7 +13,7 @@ class ForumDetailsWidget extends StatelessWidget {
     return ClipPath(
       clipper: MyCustomClipper(),
       child: Container(
-        height: 150.0,
+        height: 160.0,
         padding: const EdgeInsets.only(
             left: 20.0, right: 16.0, top: 24.0, bottom: 12.0),
         color: Colors.white,

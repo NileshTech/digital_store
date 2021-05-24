@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "306837546336",
+    "firebase_url": "https://mini-business-bbfff-default-rtdb.firebaseio.com",
+    "project_id": "mini-business-bbfff",
+    "storage_bucket": "mini-business-bbfff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306837546336:android:b038328e4f5d6ea03aaa05",
+        "android_client_info": {
+          "package_name": "apj.suffix.digital_store_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306837546336-5eatpa2rjotekhom2pf92o1r3c6ift6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apj.suffix.digital_store_project",
+            "certificate_hash": "ceea30d6faad0e4ceb907d0fb930e79e418cc024"
+          }
+        },
+        {
+          "client_id": "306837546336-p221eb2ejpt5afl2cir525o3jk7hepam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC2B0wQrkNDa30mS5soaZrzQKLXmtsDYo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306837546336-p221eb2ejpt5afl2cir525o3jk7hepam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

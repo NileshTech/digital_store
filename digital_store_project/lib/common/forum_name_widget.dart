@@ -10,22 +10,23 @@ class ForumNameWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
     return Material(
       color: primaryColor,
       elevation: 20.0,
       shape: CustomShapeBorder(),
       child: Padding(
         padding: const EdgeInsets.only(
-            top: 18.0, left: 20.0, right: 16.0, bottom: 5.0),
+            top: 22.0, left: 20.0, right: 16.0, bottom: 5.0),
         child: Column(
           children: [
             Text(
-              "Prodcut Name",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            Text(
               forum.title,
-              style: forumNameTextStyle,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: screenSize.width * 0.04,
+                fontWeight: FontWeight.w800,
+              ),
             ),
           ],
         ),
@@ -48,7 +49,7 @@ class CustomShapeBorder extends ShapeBorder {
 
   @override
   Path getOuterPath(Rect rect, {TextDirection textDirection}) {
-    return getClip(Size(180.0, 60.0));
+    return getClip(Size(150.0, 60.0));
   }
 
   @override

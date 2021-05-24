@@ -24,7 +24,7 @@ class AppBackground extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .headline4
-                    .copyWith(color: Colors.red),
+                    .copyWith(color: Colors.white),
               ),
             ),
             Positioned(
@@ -34,7 +34,8 @@ class AppBackground extends StatelessWidget {
                 height: height,
                 width: height,
                 decoration: BoxDecoration(
-                    shape: BoxShape.circle, color: firstCircleColor),
+                    shape: BoxShape.circle, color: backgroundColor),
+                // firstCircleColor),
               ),
             ),
             Positioned(
@@ -45,7 +46,8 @@ class AppBackground extends StatelessWidget {
                 width: width * 1.6,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: secondCircleColor,
+                  color: backgroundColor,
+                  // color: secondCircleColor,
                 ),
               ),
             ),
@@ -57,7 +59,8 @@ class AppBackground extends StatelessWidget {
                 width: width * 0.6,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: thirdCircleColor,
+                  color: backgroundColor,
+                  // color: thirdCircleColor,
                 ),
               ),
             ),

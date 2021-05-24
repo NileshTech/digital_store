@@ -44,8 +44,14 @@ class _WebViewPageState extends State<WebViewPage> {
               },
             ),
             isLoading
-                ? Center(
-                    child: CircularProgressIndicator(),
+                ? Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      LinearProgressIndicator(),
+                      // CircularProgressIndicator(),
+                      Text("Loading...please wait")
+                    ],
                   )
                 : Stack(),
           ],
